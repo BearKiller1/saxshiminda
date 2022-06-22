@@ -24,7 +24,14 @@ export default class Dashboard {
     }
 
     Handler = () => {
-
+        this.Listener.Init({
+            Attribute   : 'id',
+            ElementName : "menu_icon",
+            event       : "click",
+            function : () => {
+                alert(12);
+            }
+        });
     }
 }
 
