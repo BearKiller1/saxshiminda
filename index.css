@@ -1,0 +1,57 @@
+
+@font-face {
+    font-family: Lobster;
+    src: url(assets/fonts/Lobster\ Regular\ 400.ttf);
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+p,i,button{
+    cursor: pointer;
+}
+
+#content{
+    position: relative;
+}
+
+
+/* Message Box */
+
+#Message{
+    z-index: 0 !important;
+    width: 20%;
+    min-height: 10vh;
+    height: auto;
+    position: absolute;
+    left: 40%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    font-family: Lobster;
+    opacity: 0;
+    background-color: white;
+    font-size: 24px;
+}
+
+#Message button{
+    position: absolute;
+    bottom:1vh;
+    right:5%;
+    width: 20%;
+    height: 4vh;
+    border:0;
+    outline:0;
+    border-radius:15px;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#Message button:hover{
+    background-color: rgb(120,171,254);
+}
