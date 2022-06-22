@@ -20,9 +20,40 @@
 <body>
     <div id="Message"></div>
 
-    <div class="navigation"></div>
+    <div class="navigation">
+        
+        <div class="logo">
+            <img src="assets/images/th.webp" alt="logo" onclick="Router('dashboard');">
+        </div>
+
+        <from class="search" action="#">
+            <input type="text" id="search" placeholder="Search..">
+            <i class="fa fa-search" style="color: black;"></i>
+        </from>
+
+        <div class="menu">
+            <i class="fa fa-bars" style="color: black;" id="menu_icon" onclick="Toggle()"></i>
+        </div>
+    </div>
+
+    <div class="side_menu">
+        <div class="side_menu_content">
+            <p onclick="Router('upload');Toggle()">Upload</p>
+            <p>Profile</p>
+            <p>Settings</p>
+            <p>Rules</p>
+            <p>About</p>
+            <p>Contact</p>
+        </div>
+    </div>
 
     <div id="content"></div>
+
+    <div class="footer">
+
+    </div>
+
+    <div class="blackhole"></div>
 
     <div class="footer"></div>
 </body>

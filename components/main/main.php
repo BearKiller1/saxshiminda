@@ -181,10 +181,10 @@ function CreateJSClass($js,$pagename,$group){
     else{ $urls = '../../'; }
 
 $class = '
-import Router from "'.$urls.'global/js/Router/Router.j";
+import Router from "'.$urls.'global/js/Router/Router.js";
 import Translator from "'.$urls.'global/js/Translate/Translate.js";
 import Ajax from "'.$urls.'global/js/Ajax/Ajax.js";
-import Listener from "'.$urls.'../../global/js/Listener/Listener.js";
+import Listener from "'.$urls.'global/js/Listener/Listener.js";
 
 export default class '.$class_name.' {
     
